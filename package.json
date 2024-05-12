@@ -1,0 +1,17 @@
+{
+    "name": "zadarma-api",
+    "version": "1.0.0",
+    "description": "Node.js application using Zadarma API",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "axios": "^0.24.0",
+        "dotenv": "^10.0.0"
+    },
+    "devDependencies": {},
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
