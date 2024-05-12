@@ -1,7 +1,8 @@
+require('dotenv').config(); // Import dotenv module to read .env file
 const ZadarmaApi = require('./ZadarmaApi');
 
 async function main() {
-  const zadarma = new ZadarmaApi('YOUR_KEY', 'YOUR_SECRET');
+  const zadarma = new ZadarmaApi(process.env.ZADARMA_API_KEY, process.env.ZADARMA_API_SECRET);
 
   try {
     const tariffResponse = await zadarma.call('/v1/tariff');
